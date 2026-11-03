@@ -1,0 +1,12 @@
+# Libros privados y archivos temporales
+*.xlsx
+*.xls
+*.xlsm
+~$*
+
+# Excepción: demo pública
+!demo/SaaS_Finanzas_Salud_Demo.xlsx
+
+# Sistema
+Thumbs.db
+.DS_Store

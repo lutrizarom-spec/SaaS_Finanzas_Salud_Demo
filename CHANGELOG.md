@@ -12,6 +12,7 @@ Todos los cambios relevantes de **SaaS Finanzas & Salud** se registran aquí.
   - `AD18` Horas Estudio Acumuladas: suma de las horas de estudio registradas.
   - `AD19` Proficiencia Académica: nivel según el promedio de la proficiencia diaria.
 - Alinea el comportamiento de la demo con la versión completa v2.0.
+- Se activa la protección de hojas del demo (solo visualización), como indica la documentación.
 
 ## [1.0.0-demo] - 2026-11-03
 

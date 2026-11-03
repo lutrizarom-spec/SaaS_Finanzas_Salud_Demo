@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finanzas &amp; Salud — Plantilla de finanzas personales en Excel</title>
+<meta name="description" content="Plantilla de Excel para ordenar las finanzas y los hábitos de una persona o familia. Dos dashboards, sin macros, para Excel 2021 o Microsoft 365.">
+<style>
+  :root{
+    --tinta:#14202b; --gris:#5b6b7a; --linea:#e2e8ee; --fondo:#f6f8fa;
+    --acento:#0f6f5c; --acento2:#0c5a4a; --blanco:#fff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--tinta);line-height:1.6;background:var(--blanco)}
+  a{color:var(--acento)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+  header{border-bottom:1px solid var(--linea);padding:16px 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .marca{font-weight:700;letter-spacing:-.01em}
+  .btn{display:inline-block;background:var(--acento);color:#fff;text-decoration:none;padding:13px 22px;border-radius:9px;font-weight:600;border:0;cursor:pointer}
+  .btn:hover{background:var(--acento2)}
+  .btn.sec{background:transparent;color:var(--acento);border:1px solid var(--acento)}
+  .btn.sec:hover{background:#eef6f3}
+  .hero{padding:64px 0 44px}
+  .hero h1{font-size:2.25rem;line-height:1.2;margin:0 0 14px;letter-spacing:-.02em}
+  .hero p.sub{font-size:1.1rem;color:var(--gris);max-width:640px;margin:0 0 26px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .precio{font-size:1.6rem;font-weight:700}
+  .precio small{display:block;font-size:.8rem;font-weight:500;color:var(--gris)}
+  section{padding:40px 0;border-top:1px solid var(--linea)}
+  h2{font-size:1.35rem;margin:0 0 18px;letter-spacing:-.01em}
+  ul.limpia{padding-left:20px;margin:0}
+  ul.limpia li{margin-bottom:8px}
+  .rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .tarjeta{border:1px solid var(--linea);border-radius:12px;padding:18px;background:var(--fondo)}
+  .tarjeta h3{margin:0 0 6px;font-size:1rem}
+  .tarjeta p{margin:0;color:var(--gris);font-size:.94rem}
+  .galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:start}
+  .galeria figure{margin:0;border:1px solid var(--linea);border-radius:12px;padding:10px;background:var(--fondo)}
+  .galeria img{width:100%;height:auto;display:block;border-radius:6px}
+  .galeria figcaption{font-size:.82rem;color:var(--gris);padding-top:8px}
+  .pantalla{margin:0 0 22px}
+  .pantalla img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--linea)}
+  .pantalla figcaption{font-size:.88rem;color:var(--gris);padding-top:10px}
+  table{width:100%;border-collapse:collapse;font-size:.95rem}
+  th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--linea);vertical-align:top}
+  th{color:var(--gris);font-weight:600;font-size:.86rem;text-transform:uppercase;letter-spacing:.03em}
+  .si{color:var(--acento);font-weight:600}
+  .no{color:var(--gris)}
+  ol.pasos{padding-left:20px}
+  ol.pasos li{margin-bottom:12px}
+  details{border:1px solid var(--linea);border-radius:10px;padding:14px 16px;margin-bottom:10px;background:var(--blanco)}
+  details summary{cursor:pointer;font-weight:600}
+  details p{margin:10px 0 0;color:var(--gris)}
+  .aviso{background:#fff8e6;border:1px solid #f0dfae;border-radius:10px;padding:14px 16px;font-size:.92rem}
+  footer{border-top:1px solid var(--linea);padding:28px 0 44px;color:var(--gris);font-size:.88rem}
+  footer a{color:var(--gris)}
+  code{background:var(--fondo);padding:2px 5px;border-radius:4px;font-size:.88em}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="marca">Finanzas &amp; Salud</span>
+    <a class="btn sec" href="demo/SaaS_Finanzas_Salud_Demo.xlsx" download>Descargar la demo</a>
+  </div>
+</header>
+
+<main>
+
+<div class="hero wrap">
+  <h1>Ordena las finanzas y los hábitos de tu familia, en un solo archivo de Excel</h1>
+  <p class="sub">
+    Una plantilla que funciona sin macros, sin complementos y sin servicios externos.
+    Registras tus movimientos y tu día a día; los dashboards se actualizan solos.
+    Tus datos nunca salen de tu equipo.
+  </p>
+  <div class="cta">
+    <a class="btn" href="__PAYPAL_LINK__" rel="noopener">Comprar la versión completa</a>
+    <a class="btn sec" href="demo/SaaS_Finanzas_Salud_Demo.xlsx" download>Probar la demo gratis</a>
+    <div class="precio">CLP 14.990<small>Pago único · licencia personal y familiar</small></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Para qué sirve</h2>
+    <ul class="limpia">
+      <li>Registrar ingresos, gastos y ahorros en una sola tabla de movimientos, con categorías que se completan solas.</li>
+      <li>Ver el gasto real por categoría y compararlo contra tus ingresos, sin armar tablas dinámicas.</li>
+      <li>Seguir hábitos diarios, descanso y bienestar junto a las metas que te propusiste.</li>
+      <li>Ajustar tu meta de ahorro, tus capitales y tus umbrales de riesgo escribiendo en celdas, no en fórmulas.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Qué incluye</h2>
+    <div class="rejilla">
+      <div class="tarjeta"><h3>Dos dashboards</h3><p><code>dash_finanzas</code> para el dinero y <code>dash_vida</code> para tus hábitos y tus marcas físicas.</p></div>
+      <div class="tarjeta"><h3>8 gráficos y 4 tablas</h3><p>Se recalculan mientras escribes. Nada de refrescar a mano.</p></div>
+      <div class="tarjeta"><h3>Motor de cálculo propio</h3><p>Gastos reales, promedios, ratios y desglose por categoría, con la hoja de cálculo oculta para que no estorbe.</p></div>
+      <div class="tarjeta"><h3>Celdas editables, fórmulas protegidas</h3><p>Escribes solo donde corresponde. Es difícil romper el modelo sin querer.</p></div>
+      <div class="tarjeta"><h3>Guía de inicio incluida</h3><p>Una hoja <code>INSTRUCCIONES</code> con los primeros pasos y las reglas del modelo.</p></div>
+      <div class="tarjeta"><h3>Capacidad reservada</h3><p>300 movimientos, 365 días de jornada y 87 registros de ejercicios, sin insertar filas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Los dos dashboards</h2>
+    <figure class="pantalla">
+      <img src="img/dash_finanzas.png" alt="Dashboard de finanzas: KPIs, gasto por categoría y flujo de ahorro">
+      <figcaption><strong>Finanzas.</strong> Saldo, ingresos y gastos, desglose por categoría, asignación de capital y avance de tus metas de ahorro.</figcaption>
+    </figure>
+    <figure class="pantalla">
+      <img src="img/dash_vida.png" alt="Dashboard de vida: hábitos, descanso y evolución física">
+      <figcaption><strong>Vida.</strong> Hábitos del mes, descanso, lectura, estudio y evolución de tus marcas de ejercicio, con los aros de esfuerzo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Demo y versión completa</h2>
+    <table>
+      <tr><th></th><th>Demo gratis</th><th>Versión completa</th></tr>
+      <tr><td>Datos</td><td class="no">Ficticios, enero a marzo de 2026</td><td class="si">Vacía, para tus datos</td></tr>
+      <tr><td>Editable</td><td class="no">No, solo visualización</td><td class="si">Sí, celdas de entrada desbloqueadas</td></tr>
+      <tr><td>Capacidad</td><td class="no">Solo lo que muestra el ejemplo</td><td class="si">300 movimientos y un año completo</td></tr>
+      <tr><td>Guía de inicio</td><td class="no">No</td><td class="si">Hoja <code>INSTRUCCIONES</code></td></tr>
+      <tr><td>Soporte por correo</td><td class="no">No</td><td class="si">Sí</td></tr>
+      <tr><td>Actualizaciones 1.x</td><td class="no">No</td><td class="si">Incluidas</td></tr>
+    </table>
+    <p style="margin-top:16px"><a href="demo/SaaS_Finanzas_Salud_Demo.xlsx" download>Descargar la demo</a> y ábrela con Excel de escritorio. Es la misma estructura y el mismo diseño, con datos de mentira.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cómo se compra</h2>
+    <ol class="pasos">
+      <li>Paga <strong>CLP 14.990</strong> con el botón de compra.</li>
+      <li>Envía el comprobante a <a href="mailto:lutrizarom@gmail.com">lutrizarom@gmail.com</a> indicando el correo donde quieres recibir el archivo.</li>
+      <li>Recibes el ZIP con el libro, la guía de inicio y el EULA. El plazo habitual es de 24 horas.</li>
+    </ol>
+    <div class="cta">
+      <a class="btn" href="__PAYPAL_LINK__" rel="noopener">Comprar por CLP 14.990</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Requisitos</h2>
+    <ul class="limpia">
+      <li>Microsoft Excel <strong>2021</strong> o <strong>Microsoft 365</strong>, versión de escritorio, en Windows o macOS.</li>
+      <li>El archivo usa <code>XLOOKUP</code> y <code>MINIFS</code>, así que <strong>no funciona</strong> en Excel Online, Google Sheets ni LibreOffice.</li>
+      <li>No requiere macros ni habilitar contenido activo.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Sirve para toda la familia o es de un solo usuario?</summary><p>La licencia cubre a un titular y su grupo familiar directo. No incluye empleados, clientes ni terceros.</p></details>
+    <details><summary>¿Mis datos se envían a algún servidor?</summary><p>No. El libro funciona localmente en tu Excel. No tiene macros, telemetría ni conexión con servicios del autor.</p></details>
+    <details><summary>¿Puedo agregar mis propias categorías?</summary><p>En esta versión las categorías son fijas y se toman de la hoja <code>cfg_maestros</code>. Si necesitas otras, escríbeme antes de comprar y te digo si es viable.</p></details>
+    <details><summary>¿Puedo insertar más filas si me quedo sin espacio?</summary><p>El modelo ya trae 300 movimientos y un año completo reservados. No conviene insertar ni borrar filas, porque las fórmulas están atadas a esos rangos.</p></details>
+    <details><summary>¿Y si desprotejo las hojas para tocar las fórmulas?</summary><p>Puedes hacerlo, pero el archivo deja de estar cubierto por el soporte. La protección es una medida disuasiva, no un candado: si alguien se lo propone, puede abrirlo.</p></details>
+    <details><summary>¿Hay devoluciones?</summary><p>Al ser un archivo digital que se entrega completo, no hay devolución tras la entrega. Si algo no funciona como se describe, escríbeme antes de comprar o dentro de las primeras 48 horas y lo resolvemos.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Condiciones</h2>
+    <p>La compra otorga una licencia de uso personal y familiar. Prohibida la reventa, redistribución, cesión o uso comercial. Lee el <a href="EULA.md">EULA</a> y los <a href="TERMS.md">términos de venta</a> antes de comprar.</p>
+    <div class="aviso">
+      <strong>Antes de comprar:</strong> descarga la demo y verifica que tu versión de Excel abra el archivo y muestre los gráficos. Si no ocurre, escríbeme y lo revisamos.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Finanzas &amp; Salud · © 2026 Luis Patricio Lizana Román · <a href="mailto:lutrizarom@gmail.com">lutrizarom@gmail.com</a></p>
+    <p>Este producto no es asesoría financiera, médica ni legal.</p>
+  </div>
+</footer>
+
+</body>
+</html>

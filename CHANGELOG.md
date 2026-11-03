@@ -2,6 +2,17 @@
 
 Todos los cambios relevantes de **SaaS Finanzas & Salud** se registran aquí.
 
+## [1.0.1-demo] - 2026-11-03
+
+### Cambiado
+
+- `in_jornada_habitos`: los KPIs de vida del dashboard ahora se calculan con fórmulas en vez de valores fijos:
+  - `AD8` Horas Sueño Promedio: promedio de (Hora Despertar − Dormir Meta).
+  - `AD17` Cadena de Victoria: conteo de días con protocolo cumplido.
+  - `AD18` Horas Estudio Acumuladas: suma de las horas de estudio registradas.
+  - `AD19` Proficiencia Académica: nivel según el promedio de la proficiencia diaria.
+- Alinea el comportamiento de la demo con la versión completa v2.0.
+
 ## [1.0.0-demo] - 2026-11-03
 
 ### Agregado

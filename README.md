@@ -1,4 +1,4 @@
-# SaaS Finanzas & Salud
+# Finanzas & Salud
 
 Plantilla y dashboard premium en Excel para ordenar las finanzas personales y la salud de una persona o familia. Funciona con fórmulas, tablas y gráficos: no requiere macros, complementos ni servicios externos.
 
@@ -11,6 +11,7 @@ La demo usa datos ficticios y sirve para evaluar la estética, los dashboards y 
 - 10 hojas: 9 funcionales más `LICENCIA`.
 - 2 dashboards: `dash_finanzas` y `dash_vida`.
 - 8 gráficos y 4 tablas.
+- Tema visual oscuro (violeta) con halos de fuego en los aros de ejercicio.
 - Datos de ejemplo de enero a marzo de 2026.
 - `calc_finanzas` oculta.
 - Todas las hojas protegidas como medida disuasiva.
@@ -100,6 +101,8 @@ La demo pública contiene datos ficticios. No envíes datos reales en issues, co
 ## Estado
 
 - Demo verificada: 0 errores de fórmula, 8 gráficos, 4 tablas, 10/10 hojas protegidas.
+- Demo rediseñada: tema violeta oscuro, halo de fuego en los cinco aros de ejercicio y composición de `dash_vida` reordenada (cabecera, fila de KPI, columna izquierda, panel central, fila de gráficos y columna derecha).
+- Corregidos tres enlaces `#REF!` que dejaban vacíos los KPI «Despertar Meta» y «Dormir Meta» de `dash_vida`.
 - `calc_finanzas!D37` corregido en la demo con `CHAR(10)` y `DATE(YEAR(TODAY()),12,31)`.
 - El libro completo no se publica en este repositorio; se entrega fuera de GitHub.
 

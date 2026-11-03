@@ -13,6 +13,7 @@ Todos los cambios relevantes de **SaaS Finanzas & Salud** se registran aquí.
   - `AD19` Proficiencia Académica: nivel según el promedio de la proficiencia diaria.
 - Alinea el comportamiento de la demo con la versión completa v2.0.
 - Se activa la protección de hojas del demo (solo visualización), como indica la documentación.
+- `dash_vida`: optimización visual (fila de KPIs uniforme, cabecera reencuadrada y tarjeta de lectura alineada).
 
 ## [1.0.0-demo] - 2026-11-03
 

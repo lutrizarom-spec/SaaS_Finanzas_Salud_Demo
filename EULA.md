@@ -1,6 +1,6 @@
 # EULA - Acuerdo de licencia de usuario final
 
-**Producto:** SaaS Finanzas & Salud - versión completa editable  
+**Producto:** Finanzas & Salud - versión completa editable  
 **Licenciante:** Luis Patricio Lizana Roman  
 **Fecha de referencia:** 3 de noviembre de 2026
 
@@ -27,7 +27,7 @@ No se permite:
 - incorporarlo en otro producto, plantilla, curso o servicio;
 - quitar avisos de autoría, licencia o marca;
 - eludir protecciones técnicas o de licencia;
-- usar el producto para prestar servicios comerciales a terceros sin una licencia comercial separada.
+- usar el producto para prestar servicios comerciales a terceros.
 
 ## 3. Datos y respaldos
 
@@ -45,7 +45,7 @@ El producto, su estructura, fórmulas, dashboards, textos y diseño son propieda
 
 ## 6. Demo
 
-La demo pública es una muestra con datos ficticios y no forma parte de la licencia comercial. No se permite usarla como sustituto del producto completo ni redistribuirla.
+La demo pública es una muestra con datos ficticios y no forma parte de la licencia de uso personal. No se permite usarla como sustituto del producto completo ni redistribuirla.
 
 ## 7. Garantías y responsabilidad
 
@@ -63,6 +63,8 @@ Este acuerdo se rige por las leyes de la República de Chile. Las partes se some
 
 ## 10. Contacto
 
-Consultas: [@lutrizarom-spec](https://github.com/lutrizarom-spec) en GitHub.
+Consultas y soporte: **lutrizarom@gmail.com**
+
+Repositorio e incidencias: [@lutrizarom-spec](https://github.com/lutrizarom-spec) en GitHub.
 
 Este documento no constituye asesoría legal.
